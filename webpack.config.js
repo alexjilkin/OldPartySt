@@ -6,7 +6,7 @@ var devFlagPlugin = new webpack.DefinePlugin({
 });
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',
     './src/index'
@@ -30,7 +30,7 @@ module.exports = {
     loaders: [
 			{ test: /\.js$/, loaders: ['babel'], include: __dirname + '/src/' },
 			{ test: /\.jsx$/, loaders: ['babel'], include: __dirname + '/src/' },
-			{ test: /\.scss$/, loaders: ['style', 'css', 'sass'] }
+			{ test: /\.scss$/, loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]', 'sass'] }
 		]
   }
 };

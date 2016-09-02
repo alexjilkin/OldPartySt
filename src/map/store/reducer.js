@@ -3,7 +3,7 @@ const initialMapState = {
 }
 
 function map(map = initialMapState, action) {
-  const {type, playload} = action
+  const {type, payload} = action
 
   switch (type) {
     case 'MAP@HIDE_MAP': {

@@ -7,7 +7,7 @@ import {syncReduxAndRouter, routeReducer} from 'redux-simple-router';
 
 import Home from '../components/Home.jsx';
 import {Map} from 'map'
-
+import {scSearch} from 'search'
 require('../styles/app.scss');
 
 const store = configureStore();
@@ -22,6 +22,7 @@ class App extends Component {
 				<Router history={history}>
 					<Route path="/" component={Home}></Route>
           <Route path="/map" component={Map}></Route>
+          <Route path="/search" component={scSearch}></Route>
 				</Router>
 			</Provider>
 		);

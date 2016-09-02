@@ -1,0 +1,23 @@
+.sc-search {
+  padding: 5px;
+
+  .search-results{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    .search-result {
+      width: 400px;
+      height: 70px;
+      margin: 10px;
+      display: flex;
+
+      .image {
+        margin: 5px;
+        min-height: 65px;
+        min-width: 65px;
+        background-size: contain;
+      }
+    }
+  }
+}

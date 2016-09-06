@@ -28,8 +28,8 @@ module.exports = {
   ],
   module: {
     loaders: [
-			{ test: /\.js$/, loaders: ['babel'], include: __dirname + '/src/' },
-			{ test: /\.jsx$/, loaders: ['babel'], include: __dirname + '/src/' },
+			{ test: /\.js$/, loaders: ['babel'], include: path.resolve('src') },
+			{ test: /\.jsx$/, loaders: ['babel'], include: path.resolve('src') },
 			{ test: /\.scss$/, loaders: ['style', 'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]', 'sass'] }
 		]
   }

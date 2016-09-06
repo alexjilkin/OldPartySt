@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React skeleton with webpack, hot module reloading, devtools, etc",
   "scripts": {
-    "start": "DEBUG=true node server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",
